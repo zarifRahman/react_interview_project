@@ -1,0 +1,57 @@
+@use '../../styles/scss/partials/colors';
+
+.input {
+  background: colors.$white_2;
+  border: 0.0125em solid rgb(104 112 116 / 19%);
+  border-radius: 0.3125rem;
+  color: colors.$black;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  margin: 0.625rem 0;
+}
+
+.headerBottom {
+  margin-bottom: 15px
+}
+.marginHead {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.input_root {
+  margin: 0.625rem 0;
+
+  label {
+    color: colors.$grey;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    display: flex;
+  }
+
+  input {
+    margin-top: 0.9375rem;
+  }
+}
+.headerBottom {
+  margin-bottom: 15px
+}
+.marginHead {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.content {
+  padding: 1.5rem;
+  margin: 0;
+  min-height: 17.5rem;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.inputField {
+  margin-top: 15px;
+}

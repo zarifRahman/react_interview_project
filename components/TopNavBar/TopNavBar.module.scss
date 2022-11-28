@@ -1,0 +1,55 @@
+@use '../../styles/scss/partials/colors';
+
+#nav {
+  background: colors.$blue;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 0 23px;
+  height: 57px;
+  line-height: 57px;
+
+  & h2 {
+    color: colors.$white;
+    min-width: 177px;
+  }
+}
+
+#menu {
+  width: 100%;
+  background: colors.$blue;
+  // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#nav {
+  :global {
+    .ant-menu-light .ant-menu-item:hover {
+      color: colors.$white;
+      background: colors.$grey_dark;
+    }
+    // .ant-menu-item-selected {
+    //   background-color: #B039CC !important;
+    // }
+    
+    .ant-menu-horizontal > .ant-menu-item-selected a {
+      color: colors.$white;
+    }
+    .ant-menu-horizontal > .ant-menu-item a {
+      color: colors.$white;
+    }
+    .ant-menu-horizontal {
+      border: none;
+    }
+    .ant-menu-item-selected {
+      background: colors.$grey_dark;
+    }
+    .ant-menu-horizontal > .ant-menu-item,
+    .ant-menu-horizontal > .ant-menu-submenu {
+      top: 0;
+    }
+    .ant-menu-horizontal,
+    .ant-menu-item::after,
+    .ant-menu-submenu::after {
+      border: none !important;
+    }
+  }
+}
